@@ -1,0 +1,278 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevOps Engineer Portfolio</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary-color: #2d3748;
+      --accent-color: #4fd1c5;
+      --bg-color: #edf2f7;
+      --text-color: #2d3748;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--primary-color);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #fffffffe;
+    }
+
+    nav a {
+      color: #fff;
+      margin-left: 1rem;
+      text-decoration: none;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+      height: 75vh;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0,0,0,0.6);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      background-color: rgba(0,0,0,0.7);
+      padding: 1.5rem 2rem;
+      border-radius: 8px;
+      display: inline-block;
+    }
+
+    .hero-content h2, .hero-content p {
+      color: #ffffff;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: -4rem auto 2rem;
+      padding: 2rem;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+
+    h2 {
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--accent-color);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 2rem;
+    }
+
+    th, td {
+      padding: 0.8rem;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      background-color: var(--primary-color);
+      color: white;
+    }
+
+    ul {
+      margin-bottom: 2rem;
+      padding-left: 1.5rem;
+    }
+
+    .tools img {
+      height: 40px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: var(--primary-color);
+      color: white;
+    }
+
+    .social-links a {
+      color: var(--accent-color);
+      margin-right: 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>M N Pasima's Portfolio</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills &amp; Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#tools">Tools</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>DevOps &amp; Cloud Engineering</h2>
+      <p>Automating and innovating with cloud solutions.</p>
+    </div>
+  </section>
+
+  <div class="container">
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hello! I'm <strong>M N Pasima</strong>, a DevOps engineer focused on leveraging automation, cloud solutions, and continuous improvement to deliver efficient and scalable software systems using AWS services.Expert in CI/CD Pipelines, infrastructure as code (IAC) and Automation</p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills &amp; Projects</h2>
+      
+      <table>
+        <thead>
+          <tr>
+            <th>Skill</th>
+            <th>Associated&nbsp;Project (GitHub)</th>
+          </tr>
+        </thead>
+        
+        <tbody>
+          <tr>
+            <td>CI/CD Automation</td>
+            <td>
+              <a href="https://github.com/m-pasima/sample-demo-ci-cd"
+                 target="_blank" rel="noopener noreferrer">
+                End-to-End CI/CD Pipeline (Jenkins&nbsp;+&nbsp;GitHub&nbsp;Actions)
+              </a>
+            </td>
+          </tr>
+          
+          <tr>
+            <td>Infrastructure as Code</td>
+            <td>
+              <a href="https://github.com/m-pasima/Greetings"
+                 target="_blank" rel="noopener noreferrer">
+                AWS Infrastructure with Terraform
+              </a>
+            </td>
+          </tr>
+          
+          <tr>
+            <td>Containerization</td>
+            <td>
+              <a href="https://github.com/yourusername/docker-kubernetes-eks"
+                 target="_blank" rel="noopener noreferrer">
+                Docker &amp; Kubernetes on AWS EKS
+              </a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Scripting</td>
+            <td>
+              <a href="https://github.com/m-pasima/cicd-tools-installation-scripts"
+                 target="_blank" rel="noopener noreferrer">
+                Bash-Scripting &amp; Installations scripts
+              </a>
+            </td>
+          </tr>
+          
+          <tr>
+            <td>Monitoring</td>
+            <td>
+              <a href="https://github.com/yourusername/monitoring-logging-stack"
+                 target="_blank" rel="noopener noreferrer">
+                Prometheus &amp; Grafana Stack
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="experience">
+      <h2>Professional Experience</h2>
+
+      <h3>DevOps Engineer at Barclays (2023&nbsp;-&nbsp;Present)</h3>
+      <ul>
+        <li>Implemented and managed CI/CD pipelines.</li>
+        <li>Automated infrastructure deployments using Terraform and CloudFormation.</li>
+        <li>Enhanced monitoring and logging using Prometheus and Grafana.</li>
+        <li>Configured and managed servers such as Tomcat and Nginx.</li>
+        <li>Collaborated closely with developers and QA teams to streamline workflows.</li>
+      </ul>
+
+      <h3>Junior Linux &amp; Cloud Infrastructure Engineer at Tesco (2020&nbsp;-&nbsp;2023)</h3>
+      <ul>
+        <li>Maintained and secured Linux server environments.</li>
+        <li>Provisioned and managed AWS cloud resources.</li>
+        <li>Automated tasks through scripting and orchestration tools.</li>
+        <li>Used Terraform and Terragrunt to provision resources on AWS.</li>
+        <li>Created and managed users' access using IAM on AWS.</li>
+      </ul>
+    </section>
+
+    <section id="tools">
+      <h2>Tools &amp; Technologies</h2>
+      <div class="tools">
+        <!-- Existing Logos -->
+        <img src="https://img.shields.io/badge/Linux-FCC624.svg?&logo=linux&logoColor=black" alt="Linux">
+        <img src="https://img.shields.io/badge/Maven-C71A36.svg?&logo=apache-maven&logoColor=white" alt="Maven">
+        <img src="https://img.shields.io/badge/SonarQube-4E9BCD.svg?&logo=sonarqube&logoColor=white" alt="SonarQube">
+        <img src="https://img.shields.io/badge/Jenkins-D24939.svg?&logo=jenkins&logoColor=white" alt="Jenkins">
+        <img src="https://img.shields.io/badge/GitHub_Actions-2088FF.svg?&logo=github-actions&logoColor=white" alt="GitHub Actions">
+        <img src="https://img.shields.io/badge/Terraform-623CE4.svg?&logo=terraform&logoColor=white" alt="Terraform">
+        <img src="https://img.shields.io/badge/Docker-2496ED.svg?&logo=docker&logoColor=white" alt="Docker">
+        <img src="https://img.shields.io/badge/Kubernetes-326CE5.svg?&logo=kubernetes&logoColor=white" alt="Kubernetes">
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p><a href="mailto:youremail@example.com">passypet@gmail.com</a></p>
+      <div class="social-links">
+        <a href="https://en.wikipedia.org/wiki/Venom_(2018_film)" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/m-pasima" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">Youtube</a>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>© 2025 Your Name's DevOps Portfolio. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
